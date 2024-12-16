@@ -1,0 +1,8 @@
+rows = int(input("Enter the number of rows for the fourth pattern: "))
+print("\nPattern 4:")
+for i in range(1, rows + 1):
+    spaces = "_" * (rows - i)  # Print '_' (rows-i) times
+    pattern = ""
+    for j in range(1, i + 1):
+        pattern += str((i + j) % 2)  # Alternate between 1 and 0
+    print(spaces + pattern)

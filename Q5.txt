@@ -1,0 +1,4 @@
+rows = int(input("Enter the number of rows for the fifth pattern: "))
+print("\nPattern 5:")
+for i in range(rows):
+    print("-" * i + "*" * (2 * (rows - i) - 1))  # Print '-' i times followed by '*' decreasing in odd numbers

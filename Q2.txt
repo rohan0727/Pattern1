@@ -1,0 +1,4 @@
+rows = int(input("Enter the number of rows for the second pattern: "))
+print("\nPattern 2:")
+for i in range(1, rows + 1):
+    print("-" * (rows - i) + "*" * i)  # Print '-' (rows-i) times followed by '*' i times
